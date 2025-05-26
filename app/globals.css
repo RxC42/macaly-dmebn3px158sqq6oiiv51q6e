@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 10%; /* #1A1A1A */
+    --foreground: 0 0% 100%; /* #FFFFFF */
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 71 43% 22%; /* Armádní zelená #4B5320 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 54 48% 58%; /* Khaki #BDB76B */
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 55% 42%; /* Červená #B22222 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 71 43% 22%;
+    --input: 0 0% 20%;
+    --ring: 54 48% 58%;
+    --chart-1: 71 43% 22%;
+    --chart-2: 54 48% 58%;
+    --chart-3: 0 55% 42%;
+    --chart-4: 50 34% 30%;
+    --chart-5: 36 29% 28%;
+    --radius: 0.25rem;
+  }
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 71 43% 22%; /* Armádní zelená #4B5320 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 54 48% 58%; /* Khaki #BDB76B */
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 55% 42%; /* Červená #B22222 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 71 43% 22%;
+    --input: 0 0% 90%;
+    --ring: 54 48% 58%;
+    --chart-1: 71 43% 22%;
+    --chart-2: 54 48% 58%;
+    --chart-3: 0 55% 42%;
+    --chart-4: 50 34% 30%;
+    --chart-5: 36 29% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
